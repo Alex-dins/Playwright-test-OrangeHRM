@@ -16,7 +16,7 @@ test.describe('Testing login page', () => {
 
     await loginPage.login(process.env.USERNAME!, process.env.PASSWORD!);
 
-    await expect(dashboard.topBarHeader).toContainText(
+    await expect(dashboard.dashboardHeader).toContainText(
       dashboardData.MAIN_HEADER
     );
   });
