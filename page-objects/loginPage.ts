@@ -6,6 +6,8 @@ export class LoginPage {
   readonly passwordInput: Locator;
   readonly loginButton: Locator;
   readonly errorAlert: Locator;
+  readonly usernameInputFieldErrorMessage: Locator;
+  readonly passwordInputFieldErrorMessage: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -13,6 +15,8 @@ export class LoginPage {
     this.passwordInput = page.getByPlaceholder('Password');
     this.loginButton = page.getByRole('button', { name: 'Login' });
     this.errorAlert = page.getByRole('alert');
+    this.usernameInputFieldErrorMessage = page.getByText('Required').first();
+    this.passwordInputFieldErrorMessage = page.getByText('Required').nth(1);
   }
 
   async login(username: string, password: string) {

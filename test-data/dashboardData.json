@@ -1,3 +1,5 @@
 {
-  "MAIN_NEADER": "Dashboard"
+  "MAIN_HEADER": "Dashboard",
+  "PIM_HEADER": "PIM",
+  "ADMIN_HEADER": "Admin"
 }
