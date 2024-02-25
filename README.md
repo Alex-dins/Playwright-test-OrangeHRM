@@ -9,7 +9,15 @@ It is required to have git, Node.js and npm installed to clone and run this proj
 > I used versions `2.39.3`, `v16.16.0`, and `8.11.0` of git, Node.js and npm, respectively. I suggest you use the same
 > or later LTS versions.
 
+## Fork and clone the project
+
+ - Fork the project
+ - Access the forked project
+
 ## Installation
+
+IMPORTANT: Create your .env file. I recommend you to create an account on the page `https://magento.softwaretestingboard.com/` and use your email and password in the .env file.
+Use variables to store account credentials locally: `USER_EMAIL`, `PASSWORD`
 
 Run `npm install` (or `npm i` for the short version) to install the dev dependencies.
 
